@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultor Senior en Proyectos & Analítica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <script defer src="./js/index.js"></script>    
+
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publickey: "kRgzpKVt_meg3tyYF",
+            });
+        })();
+    </script> -->
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll('.reveal-section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+
+<script>
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+</script>
+
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <img src ="img/Logo DPM Consulting.png" alt = "Darío Morena - Consultoría Estratégica" class="main-logo">
+        <!-- <a class="navbar-brand" href="#">Darío Morena</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#metodologia">Metodología</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>               
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                <!-- WhatsApp -->
+                 <li class="WhatsApp">
+                    <a href="https://wa.me/5491127641184" target="_blank">
+                        <img src="img/Logo Ws.svg" alt="Hablemos" class="whatsapp-logo">
+                    </a>
+                 </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="section-divider"></div>
+
+<!-- HERO -->
+<section id="inicio" class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+        <!-- <span class="badge bg-primary mb-3">Consultoría Boutique</span> -->
+        <h1 class="mt-3">
+            Consultoría en Proyectos,<br>
+            Sistemas e Información Estratégica
+        </h1>
+        <h2 class="lead mt-4 mb-5">
+            Acompañamos a Organizaciones a profesionalizar sus Proyectos, 
+            ordenar sus Datos y convertirlos en Información Estratégica para la Toma de Decisiones.
+        </h2>
+        <a href="#contacto" class="btn btn-outline-light btn-lg">
+            Agendar una Consulta
+        </a>
+
+    </div> 
+</section>
+<!-- <div class="section-divider"></div> -->
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section reveal-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Servicios</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 h-100">
+                    <div class="icon mb-3">📊</div>
+                    <h5>Gobierno de Datos</h5>
+                    <p>
+                        Definición de modelos, roles y procesos
+                        para asegurar calidad, trazabilidad
+                        y uso Estratégico de la Información.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 h-100">
+                    <div class="icon mb-3">📈</div>
+                    <h5>Analítica & BI</h5>
+                    <p>
+                        Diseño de Indicadores y Tableros orientados
+                        a la Toma de Decisiones Ejecutivas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 h-100">
+                    <div class="icon mb-3">🧭</div>
+                    <h5>Gestión de Proyectos</h5>
+                    <p>
+                        Acompañamiento integral en iniciativas, 
+                        desde la definición hasta la ejecución.
+                        Tenemos experiencia en metodologías ágiles 
+                        y tradicionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div class="section-divider"></div> -->
+
+<!-- METADOLOGÍA -->
+<section id="metodologia" class="section reveal-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Metodología de Trabajo</h2>
+
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <h6 class="text-primary">01</h6>
+                <h5>Diagnóstico</h5>
+                <p>Comprensión del contexto, objetivos del negocio y los datos disponibles.</p>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h6 class="text-primary">02</h6>
+                <h5>Diseño</h5>
+                <p>Definición de la estrategia de información y del plan de acción.</p>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h6 class="text-primary">03</h6>
+                <h5>Ejecución</h5>
+                <p>Acompañamiento continuo durante la implementación.</p>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h6 class="text-primary">04</h6>
+                <h5>Transferencia</h5>
+                <p>Desarrollo de capacidades en los equipos para asegurar continuidad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div class="section-divider"></div> -->
+<!-- EXPERIENCIA -->
+<section id="experiencia" class="section reveal-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Experiencia</h2>
+        <p class="text-center">
+            Más de 28 años de experiencia profesional liderando Proyectos de Sistemas, 
+            Información y Analítica en organizaciones complejas, públicas y privadas.<br>
+            Trabajando tanto en roles de gestión como en posiciones estratégicas, lo que nos 
+            permite entender necesidades del Negocio y de los equipos técnicos.
+        </p>
+    </div>
+</section>
+<!-- <div class="section-divider"></div> -->
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="section reveal-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Proyectos</h2>
+
+        <div class="row">
+            <div class="col-md-6 mb-6">
+                <div class="service-box p-4 h-100">
+                    <div class="icon mb-3">✍🏼</div>
+                    <h5>Consultoría y Asesoramiento</h5>
+                    <p>
+                        • Elaboración y Seguimiento de Plan Estratégico de Sistemas e Información para ONG de Salud.<br>
+                        • Definición e Implementación de metodología de Gestión de Proyectos en empresa Agroindustrial.<br>
+                        • Definición de Indicadores y Tableros Gerencial en empresa de Consumo Masivo.<br>
+                        • Definición de Modelo de Gobierno de Datos para ONG de Salud.<br>
+                        • Startup de Oficina Corporativa de Proyectos (PMO) en empresa Agroindustrial.<br>
+                        • Definición e Implementación de Procesos de Cartera de Proyectos, Gestión de la Demanda y Priorización.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-6">
+                <div class="service-box p-4 h-100">
+                    <div class="icon mb-3">📆</div>
+                    <h5>Gestión de Proyectos</h5>
+                    <p>
+                        • Relevamiento, Análisis, Diseño, Construcción e Implementación de DataWarehouse Corporativo (Financiero
+                        y Comercial).<br>
+                        • Diagnóstico, Diseño, Implementación y Puesta en Marcha de Tableros de Control Gerencial con Power BI.<br>
+                        • Definición de Modelo de Gobierno de Datos para ONG de Salud.<br>
+                        • Lanzamientos de Productos de Consumo Masivo al Mercado.<br>
+                        • Preparación para IPO Grupo Empresario de Consumo Masivo.<br>
+                        • Transformación Digital en ONG de Salud (Soluciones Cloud).<br>
+                        • Implementación de ERP, CRM y SCM en empresas de Consumo Masivo y Agroindistriales.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div class="section-divider"></div> -->
+
+<!-- CONTACTO -->
+<section id="contacto" class="section">
+    <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <p class="text-center">
+            Si estás de acuerdo, podemos coordinar una conversación breve para entender tu contexto 
+            y evaluar si podemos ayudarte.<br>
+            <b>Ing.Darío Morena</b> 
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- <form> -->
+                <form id="ContactForm">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" requiered>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Consulta</label>
+                        <textarea class="form-control" rows="4" name="consulta" requiered></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+                                <!-- EmailJS -->
+                    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+                    <script>
+                    (function(){
+                        emailjs.init("kRgzpKVt_meg3tyYF");
+                    })();
+                    </script>
+
+                    <script>
+                    document.getElementById("ContactForm").addEventListener("submit", function(e) {
+                        e.preventDefault();
+
+                        emailjs.sendForm(
+                            "service_u8lpjs7",
+                            "template_ose5m34",
+                            this
+                        )
+                        .then(function() {
+                            alert("Mensaje enviado correctamente");
+                        }, function(error) {
+                            alert("Error al enviar el mensaje");
+                            console.log(error);
+                        });
+                        document.getElementById("ContactForm").reset();
+                    });
+                    </script>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FOOTER -->
+<footer class="footer bg-dark text-white text-center py-3">
+    <h3><p class="mb-0">© 2026 DM Consulting - Consultoría en Gestión de Proyectos & Información</p></h3>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</script>
+</body>
+</html>
