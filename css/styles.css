@@ -100,7 +100,7 @@ html {
 }
 
 .section-divider {
-    height: 80px;
+    height: 30px;
 }
 
 .navbar {
@@ -209,14 +209,14 @@ button {
     width: 300px;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .whatsapp-logo{
   width: 15px;
   height: auto;
   display: block;
-  margin: 5px ;
+  margin: 10px ;
   background-color: transparent;
 }
 /* h5 p {
